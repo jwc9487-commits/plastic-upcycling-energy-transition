@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "plastic-upcycling-energy-transition: code and data for 'Plastic waste upcycling in a decarbonizing energy system: Regional and long-term viability'"
+type: software
+authors:
+  - family-names: Jeong
+    given-names: Woochang
+    affiliation: Sungkyunkwan University
+  - family-names: You
+    given-names: Chanhee
+    affiliation: Sungkyunkwan University
+  - family-names: Kim
+    given-names: Jiyong
+    affiliation: Sungkyunkwan University
+repository-code: "https://github.com/jwc9487-commits/plastic-upcycling-energy-transition"
+doi: 10.5281/zenodo.XXXXXXX
+license: MIT
+version: 1.0.0
+keywords:
+  - plastic waste
+  - chemical upcycling
+  - techno-economic analysis
+  - life cycle assessment
+  - electrification
+  - superstructure

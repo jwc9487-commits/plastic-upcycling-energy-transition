@@ -1,0 +1,67 @@
+Scenario,Strategy,Region,w_PVC_actual,margin,grid_CI
+Fossil baseline,A,Global/EU,0.13700,0.00276,30
+Fossil baseline,B,Global/EU,0.13700,-0.14598,30
+Fossil baseline,C,Global/EU,0.13700,0.24829,30
+Fossil baseline,A,U.S.,0.01700,0.18268,50
+Fossil baseline,B,U.S.,0.01700,0.16447,50
+Fossil baseline,C,U.S.,0.01700,0.21258,50
+Fossil baseline,A,China,0.20400,-0.15160,110
+Fossil baseline,B,China,0.20400,-0.36134,110
+Fossil baseline,C,China,0.20400,0.20731,110
+Fossil baseline,A,Japan,0.06000,0.11230,50
+Fossil baseline,B,Japan,0.06000,0.04808,50
+Fossil baseline,C,Japan,0.06000,0.21820,50
+Fossil baseline,A,Korea,0.09000,0.04187,70
+Fossil baseline,B,Korea,0.09000,-0.05307,70
+Fossil baseline,C,Korea,0.09000,0.19931,70
+Fossil baseline,A,India,0.04400,0.07948,130
+Fossil baseline,B,India,0.04400,0.03499,130
+Fossil baseline,C,India,0.04400,0.15209,130
+Fossil baseline,A,Indonesia,0.11600,0.00537,90
+Fossil baseline,B,Indonesia,0.11600,-0.11505,90
+Fossil baseline,C,Indonesia,0.11600,0.21005,90
+Fossil baseline,A,Canada,0.08000,0.08475,20
+Fossil baseline,B,Canada,0.08000,-0.00269,20
+Fossil baseline,C,Canada,0.08000,0.22628,20
+Fossil baseline,A,Brazil,0.18000,-0.08544,20
+Fossil baseline,B,Brazil,0.18000,-0.28221,20
+Fossil baseline,C,Brazil,0.18000,0.23444,20
+Fossil baseline,A,Australia,0.08000,0.11016,40
+Fossil baseline,B,Australia,0.08000,0.02388,40
+Fossil baseline,C,Australia,0.08000,0.25408,40
+Fossil baseline,A,South Africa,0.12000,-0.00854,110
+Fossil baseline,B,South Africa,0.12000,-0.13125,110
+Fossil baseline,C,South Africa,0.12000,0.20269,110
+Renewable electrification,A,Global/EU,0.13700,0.59499,30
+Renewable electrification,B,Global/EU,0.13700,0.38863,30
+Renewable electrification,C,Global/EU,0.13700,0.86778,30
+Renewable electrification,A,U.S.,0.01700,0.84359,50
+Renewable electrification,B,U.S.,0.01700,0.81831,50
+Renewable electrification,C,U.S.,0.01700,0.87772,50
+Renewable electrification,A,China,0.20400,0.38517,110
+Renewable electrification,B,China,0.20400,0.09172,110
+Renewable electrification,C,China,0.20400,0.77648,110
+Renewable electrification,A,Japan,0.06000,0.68173,50
+Renewable electrification,B,Japan,0.06000,0.59263,50
+Renewable electrification,C,Japan,0.06000,0.79752,50
+Renewable electrification,A,Korea,0.09000,0.62589,70
+Renewable electrification,B,Korea,0.09000,0.49424,70
+Renewable electrification,C,Korea,0.09000,0.80075,70
+Renewable electrification,A,India,0.04400,0.80397,130
+Renewable electrification,B,India,0.04400,0.74199,130
+Renewable electrification,C,India,0.04400,0.89086,130
+Renewable electrification,A,Indonesia,0.11600,0.52432,90
+Renewable electrification,B,Indonesia,0.11600,0.35797,90
+Renewable electrification,C,Indonesia,0.11600,0.74514,90
+Renewable electrification,A,Canada,0.08000,0.69985,20
+Renewable electrification,B,Canada,0.08000,0.57863,20
+Renewable electrification,C,Canada,0.08000,0.85814,20
+Renewable electrification,A,Brazil,0.18000,0.51482,20
+Renewable electrification,B,Brazil,0.18000,0.24197,20
+Renewable electrification,C,Brazil,0.18000,0.87368,20
+Renewable electrification,A,Australia,0.08000,0.67965,40
+Renewable electrification,B,Australia,0.08000,0.55982,40
+Renewable electrification,C,Australia,0.08000,0.83663,40
+Renewable electrification,A,South Africa,0.12000,0.53501,110
+Renewable electrification,B,South Africa,0.12000,0.36560,110
+Renewable electrification,C,South Africa,0.12000,0.76729,110

@@ -1,0 +1,12 @@
+Region,ceiling,CRt_nominal,reach_08,reach_10,reach_12
+Global/EU,3.3409,3.0303,True,True,False
+U.S.,3.2665,2.9919,True,True,False
+China,3.1410,2.8742,True,True,False
+Japan,3.2538,2.9766,True,True,False
+Korea,3.2145,2.9534,True,True,False
+India,3.0828,2.8661,True,True,False
+Indonesia,3.1873,2.9163,True,True,False
+Canada,3.3175,3.0315,True,True,False
+Brazil,3.3348,3.0393,True,True,False
+Australia,3.3054,2.9939,True,True,False
+South Africa,3.1311,2.8726,True,True,False

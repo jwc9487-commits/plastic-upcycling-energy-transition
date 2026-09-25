@@ -1,0 +1,18 @@
+Data licence
+
+The data in data/master, data/intermediate and data/source_data
+(c) 2026 Woochang Jeong, Chanhee You, Jiyong Kim
+are licensed under the Creative Commons Attribution 4.0 International licence
+(CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to share and adapt the data for any purpose, provided you give
+appropriate credit by citing:
+
+  W. Jeong, C. You, J. Kim. Plastic waste upcycling in a decarbonizing energy
+  system: Regional and long-term viability. Data and code:
+  https://doi.org/10.5281/zenodo.XXXXXXX
+
+Exception: data/external/naturalearth contains Natural Earth 1:110m Cultural
+Vectors, admin-0 countries (version 5.1.1), which are in the public domain
+(https://www.naturalearthdata.com/about/terms-of-use/).

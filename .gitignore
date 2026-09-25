@@ -1,0 +1,4 @@
+logs/
+figures/output/*.png
+__pycache__/
+*.pyc

@@ -1,0 +1,73 @@
+Breakdown,Pathway set,Item,Value_M$/y
+Cost,All pathways,ACC ($M/y),17.665088525742057
+Cost,All pathways,Plastic ($M/y),11.265901981230448
+Cost,All pathways,Electricity ($M/y),5.254600869347335
+Cost,All pathways,Fired heat ($M/y),3.7962310184084713
+Cost,All pathways,Cooling water ($M/y),2.015732134225612
+Cost,All pathways,Refrigerator 1 ($M/y),0.4311259576971003
+Cost,All pathways,Refrigerator 2 ($M/y),0.7118982779860814
+Cost,All pathways,Refrigerator 3 ($M/y),0.04017351765927021
+Cost,All pathways,Refrigerator 4 ($M/y),0.02650477972395061
+Cost,All pathways,Refrigerator 5 ($M/y),0.012809550696259168
+Cost,All pathways,Low pressure steam ($M/y),0.16670205431253604
+Cost,All pathways,High pressure steam ($M/y),0.7558880683486969
+Cost,All pathways,Sulfolan ($M/y),2.1941522419186636
+Cost,All pathways,Steam ($M/y),0.1505665699270097
+Cost,All pathways,Water ($M/y),0.1384910386088209
+Cost,All pathways,Hydrogen ($M/y),5.564373981897794
+Cost,All pathways,MEA ($M/y),0.007851165993793638
+Cost,All pathways,O2 ($M/y),0.5055542857142857
+Cost,All pathways,CO_sorbent ($M/y),1.6439708230053723e-06
+Cost,All pathways,H2_sorbent ($M/y),0.1033769176950933
+Cost,All pathways,FOC($M/y),8.349126601629239
+Cost,All pathways,SUM(COST),59.15615118273334
+Cost,All pathways,Utility,13.211666228405312
+Cost,All pathways,Raw material,6.35898587614791
+Cost,All pathways,Others,2.3053819695783733
+Revenue,All pathways,Acid,1.1155065251149912
+Revenue,All pathways,Liquid fuel (Gasoline),7.531960534678541
+Revenue,All pathways,Liquid fuel (Diesel),9.50353249594143
+Revenue,All pathways,Liquid fuel (Wax),0.5558446394976304
+Revenue,All pathways,Liquid fuel (FT fuel),5.460320642203158
+Revenue,All pathways,C1-C4,1.2597445067936068
+Revenue,All pathways,Aromatics,0.5432260913942001
+Revenue,All pathways,MeOH,4.461352100793722
+Revenue,All pathways,Hydrogen,7.931988534303695
+Revenue,All pathways,Byproduct,1.5387023328869585
+Revenue,All pathways,Revenue,39.90217840360792
+Cost,Optimal pathways (F_M),ACC ($M/y),11.369739993846885
+Cost,Optimal pathways (F_M),Plastic($M/y),8.476190476190476
+Cost,Optimal pathways (F_M),Electricity ($M/y),4.079867933912134
+Cost,Optimal pathways (F_M),Fired heat ($M/y),1.4211447325273492
+Cost,Optimal pathways (F_M),Cooling water ($M/y),1.1237694564288492
+Cost,Optimal pathways (F_M),Refrigerator 1 ($M/y),0.3995890643402123
+Cost,Optimal pathways (F_M),Refrigerator 2 ($M/y),0.11874306753393157
+Cost,Optimal pathways (F_M),Refrigerator 3 ($M/y),0.02017910287005642
+Cost,Optimal pathways (F_M),Refrigerator 4 ($M/y),0.013315688115949647
+Cost,Optimal pathways (F_M),Refrigerator 5 ($M/y),0.0033054210214041196
+Cost,Optimal pathways (F_M),Low pressure steam ($M/y),0.20294751357066665
+Cost,Optimal pathways (F_M),High pressure steam ($M/y),0.6002175261809524
+Cost,Optimal pathways (F_M),Sulfolan ($M/y),1.4735238095238095
+Cost,Optimal pathways (F_M),Steam ($M/y),0.29677800000000004
+Cost,Optimal pathways (F_M),Water ($M/y),0.013240377040701074
+Cost,Optimal pathways (F_M),Hydrogen ($M/y),4.124232000000002
+Cost,Optimal pathways (F_M),MEA ($M/y),0.02841378253680777
+Cost,Optimal pathways (F_M),O2 ($M/y),0.7632
+Cost,Optimal pathways (F_M),CO_sorbent ($M/y),5.8688724991104185e-06
+Cost,Optimal pathways (F_M),H2_sorbent ($M/y),0.06744927187417998
+Cost,Optimal pathways (F_M),FOC($M/y),5.251370366497113
+Cost,Optimal pathways (F_M),SUM(COST),39.84722345288397
+Cost,Optimal pathways (F_M),Utility,7.983079506501506
+Cost,Optimal pathways (F_M),Raw material,5.1974503770407035
+Cost,Optimal pathways (F_M),Others,1.5693927328072963
+Revenue,Optimal pathways (F_M),Acid,1.8012693600698793
+Revenue,Optimal pathways (F_M),Liquid fuel (Gasoline),7.068296291691997
+Revenue,Optimal pathways (F_M),Liquid fuel (Diesel),9.317062443775498
+Revenue,Optimal pathways (F_M),Liquid fuel (Wax),0.15442318743034514
+Revenue,Optimal pathways (F_M),Liquid fuel (FT fuel),0.0
+Revenue,Optimal pathways (F_M),Gas product,0.3850872598149399
+Revenue,Optimal pathways (F_M),Aromatics,0.16815396362882043
+Revenue,Optimal pathways (F_M),MeOH,12.615903271825795
+Revenue,Optimal pathways (F_M),Hydrogen,5.695687358115024
+Revenue,Optimal pathways (F_M),Byproduct,1.9407758343743222
+Revenue,Optimal pathways (F_M),Revenue,39.14665897072662

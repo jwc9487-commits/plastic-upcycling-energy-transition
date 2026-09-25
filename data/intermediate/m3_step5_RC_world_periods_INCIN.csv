@@ -1,0 +1,89 @@
+Region,Scenario,Period,wUP_net
+Global/EU,Baseline,2026,-0.0239
+Global/EU,Baseline,2030,0.0608
+Global/EU,Baseline,2040,0.2274
+Global/EU,Baseline,2050,0.4003
+Global/EU,Electrified,2026,-0.1239
+Global/EU,Electrified,2030,0.0299
+Global/EU,Electrified,2040,0.2767
+Global/EU,Electrified,2050,0.5226
+U.S.,Baseline,2026,-0.1969
+U.S.,Baseline,2030,0.0751
+U.S.,Baseline,2040,0.2609
+U.S.,Baseline,2050,0.4611
+U.S.,Electrified,2026,-0.3411
+U.S.,Electrified,2030,0.0131
+U.S.,Electrified,2040,0.2879
+U.S.,Electrified,2050,0.5812
+China,Baseline,2026,-0.2189
+China,Baseline,2030,-0.0491
+China,Baseline,2040,0.1263
+China,Baseline,2050,
+China,Electrified,2026,-0.3528
+China,Electrified,2030,-0.1340
+China,Electrified,2040,0.1499
+China,Electrified,2050,0.4350
+Japan,Baseline,2026,-0.1208
+Japan,Baseline,2030,0.0437
+Japan,Baseline,2040,0.2269
+Japan,Baseline,2050,0.4314
+Japan,Electrified,2026,-0.2584
+Japan,Electrified,2030,-0.0367
+Japan,Electrified,2040,0.2372
+Japan,Electrified,2050,0.5410
+Korea,Baseline,2026,-0.1608
+Korea,Baseline,2030,0.0142
+Korea,Baseline,2040,0.1996
+Korea,Baseline,2050,0.4037
+Korea,Electrified,2026,-0.3162
+Korea,Electrified,2030,-0.0895
+Korea,Electrified,2040,0.1980
+Korea,Electrified,2050,0.5099
+India,Baseline,2026,
+India,Baseline,2030,-0.0183
+India,Baseline,2040,0.1766
+India,Baseline,2050,0.4068
+India,Electrified,2026,-0.3648
+India,Electrified,2030,-0.1276
+India,Electrified,2040,0.1716
+India,Electrified,2050,0.5223
+Indonesia,Baseline,2026,
+Indonesia,Baseline,2030,-0.0826
+Indonesia,Baseline,2040,0.1197
+Indonesia,Baseline,2050,0.3811
+Indonesia,Electrified,2026,
+Indonesia,Electrified,2030,
+Indonesia,Electrified,2040,0.0622
+Indonesia,Electrified,2050,0.4744
+Canada,Baseline,2026,-0.0238
+Canada,Baseline,2030,0.0977
+Canada,Baseline,2040,0.2636
+Canada,Baseline,2050,0.4332
+Canada,Electrified,2026,-0.0915
+Canada,Electrified,2030,0.0973
+Canada,Electrified,2040,0.3225
+Canada,Electrified,2050,0.5567
+Brazil,Baseline,2026,-0.2027
+Brazil,Baseline,2030,0.0705
+Brazil,Baseline,2040,0.2196
+Brazil,Baseline,2050,
+Brazil,Electrified,2026,-0.2859
+Brazil,Electrified,2030,0.0892
+Brazil,Electrified,2040,0.2885
+Brazil,Electrified,2050,0.4991
+Australia,Baseline,2026,-0.2037
+Australia,Baseline,2030,0.0120
+Australia,Baseline,2040,0.2190
+Australia,Baseline,2050,0.4307
+Australia,Electrified,2026,-0.3409
+Australia,Electrified,2030,-0.0532
+Australia,Electrified,2040,0.2596
+Australia,Electrified,2050,0.5488
+South Africa,Baseline,2026,-0.2233
+South Africa,Baseline,2030,-0.1225
+South Africa,Baseline,2040,0.1069
+South Africa,Baseline,2050,
+South Africa,Electrified,2026,
+South Africa,Electrified,2030,
+South Africa,Electrified,2040,0.0466
+South Africa,Electrified,2050,0.4550
