@@ -100,7 +100,7 @@ Tested with Python 3.14 on Windows 11. Package versions are in `requirements.txt
 
 ## Citation
 
-Please cite the paper and this repository (`CITATION.cff`). Archived version: https://doi.org/10.5281/zenodo.XXXXXXX
+Please cite the paper and this repository (`CITATION.cff`). Archived version: https://doi.org/10.5281/zenodo.23004984
 
 ## Contact
 
