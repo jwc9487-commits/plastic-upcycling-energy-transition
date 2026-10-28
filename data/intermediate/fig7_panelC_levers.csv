@@ -1,4 +1,7 @@
 Region,Period,Scenario,dCR_star,addressable,frac
-China,2050,Baseline,0.7434,0.8886,0.8366
-Brazil,2050,Baseline,0.4753,0.8886,0.5349
-South Africa,2050,Baseline,0.0718,0.8886,0.0808
+Global/EU,2050,Baseline,0.4102,0.7909,0.5187
+China,2050,Baseline,1.0283,0.7909,1.3002
+Korea,2050,Baseline,0.1729,0.7909,0.2186
+Indonesia,2050,Baseline,0.4556,0.7909,0.5761
+Australia,2050,Baseline,0.3699,0.7909,0.4677
+South Africa,2050,Baseline,0.9207,0.7909,1.1642

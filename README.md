@@ -62,25 +62,24 @@ figures/
 | Section S5 cost breakdown | not scripted | `data/source_data/si/FigS5_cost_revenue_breakdown_average.csv` (average annual cost and revenue items, all pathways and optimal pathways) | authors' spreadsheet; the unit-process breakdowns of Figs. S5.3-S5.5 derive from the process simulation results and are available on request |
 | Fig. S6.2 | `figures/si/FigS6_2_UP_optimal_bar.py` | master table | itself |
 | Fig. S6.3 | `figures/si/FigS6_3_UCR_optimal_bar.py` | master table | itself |
-| Fig. S7.1 | not scripted | `data/source_data/si/FigS7_1_*.csv` (interest rate, feedstock price) | authors' spreadsheet |
-| Figs. S7.2-S7.4 | not scripted | `data/source_data/si/FigS7_2_*` (H2 price), `FigS7_3_*` (heat CI), `FigS7_4_*` (electricity CI) | authors' spreadsheet |
-| Fig. S7.5 | `figures/si/FigS7_5_decomposition.py` | `m3_step5_RC_decomposition_INCIN.csv` | `src/regional/m3_step5_RC_decomposition_INCIN.py` |
-| Fig. S7.6 | `src/sensitivity/tornado_plot.py` | master table | itself |
-| Fig. S7.7 | `figures/si/FigS7_7_sobol.py` | `sobol_indices.csv`, `sobol_indices_CR.csv` | `src/sensitivity/sobol_indices.py`, `sobol_indices_CR.py` |
+| Fig. S7.1 | `src/sensitivity/tornado_plot.py` | master table | itself |
+| Fig. S7.2 | `figures/si/FigS7_7_sobol.py` | `sobol_indices.csv`, `sobol_indices_CR.csv` | `src/sensitivity/sobol_indices.py`, `sobol_indices_CR.py` |
+| Fig. S7.3 | `src/electrification/m2_step3_RC_optimal.py` | master table, `pathway_naming.xlsx` | itself; writes `m2_step3_RC_econ.csv`, `m2_step3_RC_env.csv` |
+| Fig. S7.4 | `src/sensitivity/phase14_optimal_pathway_sweep_RC.py` | master table | itself; writes `phase14_optimal_table_RC.csv` |
 | Table S7.1 | - | `SN3_robustness_INCIN.csv` | `src/regional/robustness_SN3_INCIN.py` |
-| Fig. S7.8 | `src/sensitivity/phase14_optimal_pathway_sweep_RC.py` | master table | itself; writes `phase14_optimal_table_RC.csv` |
-| Fig. S7.9 | `src/electrification/m2_step3_RC_optimal.py` | master table, `pathway_naming.xlsx` | itself; writes `m2_step3_RC_econ.csv`, `m2_step3_RC_env.csv` |
+| Fig. S7.5 | `figures/si/FigS7_5_decomposition.py` | `m3_step5_RC_decomposition_INCIN.csv` | `src/regional/m3_step5_RC_decomposition_INCIN.py` |
 | Tables S8.1-S8.4 | - | `Source_Data.xlsx`, sheets `Fig7_TableS8-*` | values hard-coded in `Fig7_worldmap.py` |
 
 Notes
 
-* The `si/FigS7_*` files are cell-by-cell exports of the spreadsheet sheets the figures were drawn from. The first column is the original Excel row and the header holds the Excel column letters, so the layout (one block of optimal pathways per parameter level) can be read as in the spreadsheet.
+* Script and output names of the Supplementary Section S7 figures keep an earlier numbering: `tornado_plot.py` (`FigS7_6_tornado.png`) is Fig. S7.1, `FigS7_7_sobol.py` is Fig. S7.2, `FigS7_9_crossover.png` is Fig. S7.3 and `FigS7_8_regime_map.png` is Fig. S7.4.
 * The output names `fig7_*.csv` of the PVC scripts date from an earlier figure numbering; they feed Fig. 6.
+* The region labeled `Global/EU` in the code and in `Source_Data.xlsx` is Europe in the paper (Table S8.1 and Fig. 7).
 * Figs. 5 and 6: the scripts produce the data panels. The final published layouts (panel lettering, panel arrangement and marker colours) were assembled by the authors in a graphics editor, so the script output differs from the published figures in layout only, not in data. For Fig. 6 the script labels the resin panels `a` (upper, lower) and the regional panel `b`, which appear as separate lettered panels in the paper.
 * Fig. 7 is drawn from the regional model in `src/regional/m3_step5_RC_world_map_periods_INCIN.py`. The figure script carries the same model code; only the figure size and in-figure wording differ. `robustness_SN3_INCIN.py` executes the model core of the canonical file, so Table S7.1 and Fig. 7 share one model.
-* The pathway-level analyses (Figs. 2-5, S6.2-S6.3, S7.6-S7.9) compare against a fixed incineration benchmark evaluated at the baseline grid intensity of 369 gCO2eq/kWh. The incineration credit is regionalized with the grid intensity only in the regional analyses (Figs. 6-7, S7.5, Table S7.1).
+* The pathway-level analyses (Figs. 2-5, S6.2-S6.3, S7.1-S7.4) compare against a fixed incineration benchmark evaluated at the baseline grid intensity of 369 gCO2eq/kWh. The incineration credit is regionalized with the grid intensity only in the regional analyses (Figs. 6-7, S7.5, Table S7.1).
 * `m2_step4_RC_price_alpha_compare.py` and `m2_step4_RC_price_alpha_panels.py` also draw six-panel maps (`legacy_Fig10/11_*.png`) from an earlier version of the manuscript. They are kept because they write `m2_step4_RC_compare.csv`, the input of Fig. 5.
-* Sobol indices use a fixed seed (`SEED` in the two scripts). The published indices were computed without a seed; the difference is about 0.001 in total-order and at most 0.007 in first-order indices and changes no value printed in Fig. S7.7 (two bars with the same printed value, renewable share and electricity price, can swap places).
+* Sobol indices use a fixed seed (`SEED` in the two scripts). The published indices were computed without a seed; the difference is about 0.001 in total-order and at most 0.007 in first-order indices and changes no value printed in Fig. S7.2 (two bars with the same printed value, renewable share and electricity price, can swap places).
 * Figures use Arial when it is installed and fall back to DejaVu Sans otherwise, which changes text widths slightly.
 
 ## Not included
@@ -97,6 +96,11 @@ Tested with Python 3.14 on Windows 11. Package versions are in `requirements.txt
 * Code: MIT licence (`LICENSE`).
 * Data in `data/master`, `data/intermediate` and `data/source_data`: Creative Commons Attribution 4.0 International (`data/LICENSE-DATA`).
 * `data/external/naturalearth`: Natural Earth, public domain (https://www.naturalearthdata.com/about/terms-of-use/).
+
+## Version history
+
+* v1.1.0 (2026-10-28): master table recalculated with the purchased-hydrogen emission factor of 7 kgCO2eq/kg used in the paper; mixed plastic waste compositions for Canada, Brazil, Australia and South Africa from official statistics and the composition for India from the CPCB 2015 survey (Table S8.1); Fig. 6a decomposition labels corrected; Supplementary Section S7 figures renumbered and the superseded S7 sweep data removed; Source Data updated accordingly.
+* v1.0.0 (2026-09-28): initial release.
 
 ## Citation
 

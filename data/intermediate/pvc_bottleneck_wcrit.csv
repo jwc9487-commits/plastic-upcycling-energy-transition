@@ -2,7 +2,7 @@ Region,Period,Scenario,w_PVC,w_crit
 Global/EU,2026,Baseline,0.1370,
 Global/EU,2030,Baseline,0.1370,
 Global/EU,2040,Baseline,0.1370,
-Global/EU,2050,Baseline,0.1370,
+Global/EU,2050,Baseline,0.1370,0.1060
 U.S.,2026,Baseline,0.0170,
 U.S.,2030,Baseline,0.0170,
 U.S.,2040,Baseline,0.0170,
@@ -10,7 +10,7 @@ U.S.,2050,Baseline,0.0170,
 China,2026,Baseline,0.2040,
 China,2030,Baseline,0.2040,
 China,2040,Baseline,0.2040,
-China,2050,Baseline,0.2040,0.1177
+China,2050,Baseline,0.2040,0.0862
 Japan,2026,Baseline,0.0600,
 Japan,2030,Baseline,0.0600,
 Japan,2040,Baseline,0.0600,
@@ -18,7 +18,7 @@ Japan,2050,Baseline,0.0600,
 Korea,2026,Baseline,0.0900,
 Korea,2030,Baseline,0.0900,
 Korea,2040,Baseline,0.0900,
-Korea,2050,Baseline,0.0900,
+Korea,2050,Baseline,0.0900,0.0812
 India,2026,Baseline,0.0440,-1.0000
 India,2030,Baseline,0.0440,
 India,2040,Baseline,0.0440,
@@ -26,20 +26,20 @@ India,2050,Baseline,0.0440,
 Indonesia,2026,Baseline,0.1160,-1.0000
 Indonesia,2030,Baseline,0.1160,
 Indonesia,2040,Baseline,0.1160,
-Indonesia,2050,Baseline,0.1160,
-Canada,2026,Baseline,0.0800,
-Canada,2030,Baseline,0.0800,
-Canada,2040,Baseline,0.0800,
-Canada,2050,Baseline,0.0800,
-Brazil,2026,Baseline,0.1800,
-Brazil,2030,Baseline,0.1800,
-Brazil,2040,Baseline,0.1800,
-Brazil,2050,Baseline,0.1800,0.1318
-Australia,2026,Baseline,0.0800,
-Australia,2030,Baseline,0.0800,
-Australia,2040,Baseline,0.0800,
-Australia,2050,Baseline,0.0800,
-South Africa,2026,Baseline,0.1200,
-South Africa,2030,Baseline,0.1200,
-South Africa,2040,Baseline,0.1200,
-South Africa,2050,Baseline,0.1200,0.1151
+Indonesia,2050,Baseline,0.1160,0.0864
+Canada,2026,Baseline,0.0820,
+Canada,2030,Baseline,0.0820,
+Canada,2040,Baseline,0.0820,
+Canada,2050,Baseline,0.0820,
+Brazil,2026,Baseline,0.0410,
+Brazil,2030,Baseline,0.0410,
+Brazil,2040,Baseline,0.0410,
+Brazil,2050,Baseline,0.0410,
+Australia,2026,Baseline,0.1120,
+Australia,2030,Baseline,0.1120,
+Australia,2040,Baseline,0.1120,
+Australia,2050,Baseline,0.1120,0.0886
+South Africa,2026,Baseline,0.1280,-1.0000
+South Africa,2030,Baseline,0.1280,0.0612
+South Africa,2040,Baseline,0.1280,
+South Africa,2050,Baseline,0.1280,0.0601

@@ -100,17 +100,17 @@ for xv, v in zip(xs, d.CR):
 # manuscript and the sixteen reference papers, and it claimed a reachability the
 # optimisation does not show.
 pvc = sub.loc['PVC']
-d_FC = oth.FC - pvc.FC              # avoided incineration, far smaller for PVC
-d_PD = oth.PD - pvc.PD              # product displacement, smaller for PVC
+d_PD = oth.PD - pvc.PD              # avoided incineration, far smaller for PVC
+d_FC = oth.FC - pvc.FC              # product displacement, smaller for PVC
 d_E = -(oth.E - pvc.E)              # process emissions, PVC actually emits less
 gap = d_FC + d_PD + d_E             # identical to oth.CR - pvc.CR
 
 # the split bar no longer competes with the resin columns for horizontal room:
 # it sits in its own inset over the short PVC column, top right
 y0 = pvc.CR
-SEG = [(y0, y0 + d_FC, FC_C, d_FC),
-       (y0 + d_FC, y0 + d_FC + d_PD, PD_C, d_PD),
-       (y0 + d_FC + d_PD, oth.CR, E_C, d_E)]
+SEG = [(y0, y0 + d_PD, PD_C, d_PD),
+       (y0 + d_PD, y0 + d_PD + d_FC, FC_C, d_FC),
+       (y0 + d_PD + d_FC, oth.CR, E_C, d_E)]
 axA1.add_patch(FancyBboxPatch(
     (0.7565, 0.600), 0.195, 0.317, transform=axA1.transAxes,
     boxstyle='round,pad=0.0,rounding_size=0.020', facecolor='white',
@@ -187,7 +187,7 @@ axB.scatter([elec[r.Region] for r in B.itertuples()], y, s=18, marker='o',
             label='All five upcycled, electrified')
 
 axB.set_yticks(y)
-axB.set_yticklabels([f'{r.Region}  {r.w_PVC*100:.0f}%' for _, r in B.iterrows()],
+axB.set_yticklabels([f"{'Europe' if r.Region == 'Global/EU' else r.Region}  {r.w_PVC*100:.0f}%" for _, r in B.iterrows()],
                     fontsize=6.5)
 for t, r in zip(axB.get_yticklabels(), B.itertuples()):
     if r.margin_A < 0:
@@ -204,8 +204,8 @@ axB.text(0.985, 0.022, 'Sorted by PVC share', transform=axB.transAxes,
          ha='right', va='bottom', fontsize=6.2, color=INK, style='italic')
 
 # ══════════════ legends ══════════════
-hA = [Patch(facecolor=PD_C, edgecolor='white', lw=0.4, label='Product displacement'),
-      Patch(facecolor=FC_C, edgecolor='white', lw=0.4, label='Avoided incineration'),
+hA = [Patch(facecolor=PD_C, edgecolor='white', lw=0.4, label='Avoided incineration'),
+      Patch(facecolor=FC_C, edgecolor='white', lw=0.4, label='Product displacement'),
       Patch(facecolor=E_C, edgecolor='white', lw=0.4, label='Process emissions'),
       Line2D([0], [0], color=CR_C, marker='D', ms=4.0, ls='none', mfc=CR_C,
              mec='none', label='Net carbon reduction'),
@@ -235,7 +235,7 @@ plt.savefig(out, dpi=500, facecolor='white')
 plt.close()
 print('saved', out)
 print(f'resin order {order}')
-print(f'gap {gap:.3f} = avoided incineration {d_FC:.3f} + product displacement {d_PD:.3f} + process emissions {d_E:.3f}')
+print(f'gap {gap:.3f} = avoided incineration {d_PD:.3f} + product displacement {d_FC:.3f} + process emissions {d_E:.3f}')
 print(f'regions failing at fossil baseline: {int((B.margin_A < 0).sum())}/11, '
       f'with PVC incinerated {int((B.margin_B < 0).sum())}/11, '
       f'with PVC not in the stream {int((B.margin_C < 0).sum())}/11')

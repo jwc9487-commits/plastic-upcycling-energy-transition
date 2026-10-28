@@ -72,7 +72,8 @@ for region in regions:
 
     for f in FEEDS:
         j = sel[f]
-        pd_, fc_ = PD_kg[j], FC_kg[j] - incin_shift[j]
+        # PD = avoided incineration (CO2 credit, regionalized with the grid); FC = product displacement (SUM(CO2 reduction))
+        pd_, fc_ = PD_kg[j] - incin_shift[j], FC_kg[j]
         e_ = EG_kg[j] + dE[j]
         recs.append(dict(Region=region, Feed=f, PD=pd_, FC=fc_, E=e_,
                          CR=pd_ + fc_ - e_))
@@ -95,7 +96,7 @@ print(pc.to_string(index=False, float_format=lambda v: f'{v:6.4f}'))
 
 pvc = pc[pc.Feed == 'PVC'].iloc[0]
 gap = oth['CR'] - pvc['CR']
-struct = oth['FC'] - pvc['FC']
+struct = oth['PD'] - pvc['PD']
 addr = gap - struct
 print(f'\ngap {gap:.4f} = structural {struct:.4f} + addressable {addr:.4f}')
 

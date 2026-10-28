@@ -137,6 +137,7 @@ b_w = sum(w[f] * M.INCIN_B[f] for f in FEEDS)
 CRt = pbm['CR_tgt'] - M.RED_PCT['2050'] * b_w * (CIg - M.CI_BASE_INCIN) / 1000.0
 
 best = None
+best_any = None
 for a in M.alpha_grid:
     if a > a_max:
         break
@@ -151,12 +152,17 @@ for a in M.alpha_grid:
     wup = sum(w[f] * UP_net[sel[f]] for f in FEEDS)
     if wcr >= CRt and (best is None or wup > best[0]):
         best = (wup, sel, dE, a)
+    if best_any is None or wup > best_any[0]:
+        best_any = (wup, sel, dE, a)
+if best is None:   # host misses the 2050 target under the baseline; panel C (not drawn) uses the unconstrained optimum
+    print(f'note: {HOST} 2050 baseline misses the target; panel C uses the unconstrained optimum')
+    best = best_any
 _, sel, dE, a_opt = best
 
 rows = []
 for f in FEEDS:
     j = sel[f]
-    rows.append(dict(Feed=f, PD=PD_kg[j], FC=FC_kg[j] - incin_shift[j],
+    rows.append(dict(Feed=f, PD=PD_kg[j] - incin_shift[j], FC=FC_kg[j],
                      E=EG_kg[j] + dE[j],
                      CR=PD_kg[j] + FC_kg[j] - incin_shift[j] - EG_kg[j] - dE[j]))
 pc = pd.DataFrame(rows)
@@ -169,7 +175,7 @@ print(pc.to_string(index=False))
 
 pvc = pc[pc.Feed == 'PVC'].iloc[0]
 gap = oth['CR'] - pvc['CR']
-struct = oth['FC'] - pvc['FC']
+struct = oth['PD'] - pvc['PD']
 print(f'\n  gap {gap:+.2f} = structural {struct:+.2f} (avoided incineration) '
       f'+ addressable {gap-struct:+.2f}')
 

@@ -1,10 +1,10 @@
 ﻿Incentive formulation,Target multiplier,Baseline infeasible (of 11),Electrified infeasible (of 11),Baseline infeasible regions,Electrified infeasible regions
 Credit-and-penalty (UP + tau*UCR),0.8,0,0,,
-Credit-and-penalty (UP + tau*UCR),1.0,3,0,China; Brazil; South Africa,
-Credit-and-penalty (UP + tau*UCR),1.2,11,5,Global/EU; U.S.; China; Japan; Korea; India; Indonesia; Canada; Brazil; Australia; South Africa,Global/EU; China; Indonesia; Brazil; South Africa
+Credit-and-penalty (UP + tau*UCR),1.0,6,0,Global/EU; China; Korea; Indonesia; Australia; South Africa,
+Credit-and-penalty (UP + tau*UCR),1.2,11,4,Global/EU; U.S.; China; Japan; Korea; India; Indonesia; Canada; Brazil; Australia; South Africa,Global/EU; China; Indonesia; South Africa
 Neutral-baseline (UP + tau*(UCR-1)),0.8,0,0,,
-Neutral-baseline (UP + tau*(UCR-1)),1.0,3,0,China; Brazil; South Africa,
-Neutral-baseline (UP + tau*(UCR-1)),1.2,11,5,Global/EU; U.S.; China; Japan; Korea; India; Indonesia; Canada; Brazil; Australia; South Africa,Global/EU; China; Indonesia; Brazil; South Africa
-No incentive,0.8,10,0,Global/EU; U.S.; China; Japan; Korea; India; Indonesia; Canada; Brazil; South Africa,
+Neutral-baseline (UP + tau*(UCR-1)),1.0,6,0,Global/EU; China; Korea; Indonesia; Australia; South Africa,
+Neutral-baseline (UP + tau*(UCR-1)),1.2,11,4,Global/EU; U.S.; China; Japan; Korea; India; Indonesia; Canada; Brazil; Australia; South Africa,Global/EU; China; Indonesia; South Africa
+No incentive,0.8,11,0,Global/EU; U.S.; China; Japan; Korea; India; Indonesia; Canada; Brazil; Australia; South Africa,
 No incentive,1.0,11,0,Global/EU; U.S.; China; Japan; Korea; India; Indonesia; Canada; Brazil; Australia; South Africa,
-No incentive,1.2,11,10,Global/EU; U.S.; China; Japan; Korea; India; Indonesia; Canada; Brazil; Australia; South Africa,Global/EU; China; Japan; Korea; India; Indonesia; Canada; Brazil; Australia; South Africa
+No incentive,1.2,11,10,Global/EU; U.S.; China; Japan; Korea; India; Indonesia; Canada; Brazil; Australia; South Africa,Global/EU; U.S.; China; Japan; Korea; India; Indonesia; Canada; Australia; South Africa

@@ -3,7 +3,7 @@ import os as _os
 sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))))
 import config  # repository paths, see config.py
 # -*- coding: utf-8 -*-
-"""Fig. S7.7 (journal style) — global (Sobol) variance decomposition for
+"""Fig. S7.2 (journal style) — global (Sobol) variance decomposition for
 (a) unit profit (UP) and (b) unit CO2 reduction (UCR). Two panels resolve the
 legend / category-text overlap of the old single-panel figure, and the right
 panel fulfils the 'and unit CO2 reduction' part of the caption."""
@@ -36,7 +36,7 @@ NAME = {'P_elec':'Electricity price','CI_elec':'Electricity CI','P_FH':'Fired-he
 CATEGORY = {'P_elec':'Energy','CI_elec':'Energy','P_FH':'Energy','CI_FH':'Energy',
             'P_LP':'Energy','P_HP':'Energy','P_H2':'Energy','alpha':'Energy',
             'plastic_factor':'Market','tau':'Policy','i_rate':'Finance'}
-# 2026-08-26: house palette, shared with Fig. S7.6
+# 2026-08-26: house palette, shared with Fig. S7.1
 COL = {'Energy':'#b5651d','Policy':'#e8b93d','Market':'#3f8f5a','Finance':'#4878d0'}
 
 # common driver order = by UP ST descending
